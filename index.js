@@ -73,8 +73,8 @@ searchButton.click(async function () {
 
   var coordinates = await fetchCoordinates(search);
   weather = await fetchWeather(coordinates);
-  var [day1, day2, day3, day4, day5] = weather.daily;
-  [day1, day2, day3, day4, day5].forEach((day, i) => {
+  var [day1, day2, day3, day4, day5, day6] = weather.daily;
+  [day1, day2, day3, day4, day5, day6].forEach((day, i) => {
     setDailyWeather(day, i + 1);
   });
 });
