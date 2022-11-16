@@ -52,7 +52,7 @@ function setLocalDate(utc) {
 
 function setDailyWeather(weather, el) {
   $(`#day${el}`).find(".weatherDate")[0].innerHTML = setLocalDate(weather.dt);
-  $(`#day${el}`).find(".weatherIcon")[0].innerHTML = "TODO: Icon";
+  $(`#day${el}`).find(".weatherIcon")[0].innerHTML = "Enjoy!";
   $(`#day${el}`).find(
     ".weatherTemp"
   )[0].innerHTML = `Temp: ${weather.temp.day} F`;
